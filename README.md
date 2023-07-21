@@ -1,6 +1,8 @@
 # Gift List
 
-The client sends a request containing the name and merkle proof to the server who uses the name and proof along with the merkle root to prove that the name is part of the list represented by the merkle root. If the name is in the list, the server sends a gift, but if the name is not in the list, the server sends a lump of coal.
+The nice list contains many names stored as strings. A merkle tree is created from the nice list and a root is computed and stored on the server. The client sends a request containing a name and a merkle proof to the server. The server uses the name and proof along with the merkle root to determine if the name is part of the list represented by the merkle root.
+
+If the name is in the list, the server sends a gift 🤖, but if the name is not in the list, the server sends a lump of coal 🪨.
 
 ## Getting Started
 

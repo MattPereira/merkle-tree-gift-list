@@ -11,7 +11,7 @@ async function main() {
   // create the merkle tree for the whole nice list
   const merkleTree = new MerkleTree(niceList);
 
-  const name = "Matt Pereira";
+  const name = "Sam Bankman-Fried";
   const index = niceList.findIndex((n) => n === name);
   const proof = merkleTree.getProof(index);
   console.log("proof", proof);

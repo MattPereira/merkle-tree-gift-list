@@ -25,9 +25,9 @@ app.post("/gift", (req, res) => {
   const isInTheList = verifyProof(proof, name, MERKLE_ROOT);
 
   if (isInTheList) {
-    res.send("You got a toy robot!");
+    res.send("You got a toy robot! 🤖");
   } else {
-    res.send("You are not on the list :(");
+    res.send("You are not on the list, you get lump of coal! 🪨");
   }
 });
 
